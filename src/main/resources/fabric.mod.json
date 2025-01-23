@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "withering-hearts",
+	"version": "${version}",
+	"name": "Withering Hearts",
+	"description": "The core of the Withering Dimension server.",
+	"authors": [
+		"Wither"
+	],
+	"contact": {
+		"homepage": "https://saduwub.com/",
+		"sources": "https://github.com/IzawaNanako/uwumod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/withering-hearts/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nanakowo.withering.WitheringHearts"
+		],
+		"client": [
+			"com.nanakowo.withering.WitheringHeartsClient"
+		],
+		"fabric-datagen": [
+			"com.nanakowo.withering.WitheringHeartsDataGenerator"
+		]
+	},
+	"mixins": [
+		"withering-hearts.mixins.json",
+		{
+			"config": "withering-hearts.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

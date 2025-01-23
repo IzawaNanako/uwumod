@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.nanakowo.withering.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"AnvilMenuMixin",
+		"EffectCommandsMixin",
+		"EnchantmentMixin",
+		"RangedAttributeMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
