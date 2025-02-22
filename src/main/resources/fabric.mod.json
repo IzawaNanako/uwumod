@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "withering-hearts",
+	"id": "withering-hearts-lite",
 	"version": "${version}",
-	"name": "Withering Hearts",
-	"description": "The core of the Withering Dimension server.",
+	"name": "Withering Hearts - Lite Edition",
+	"description": "The core of the Withering Dimension server, but with less stuff!",
 	"authors": [
 		"Wither"
 	],
