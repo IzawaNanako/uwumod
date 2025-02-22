@@ -24,7 +24,7 @@ loom {
 
 fabricApi {
 	configureDataGeneration {
-		client = false
+		client = true
 	}
 }
 
@@ -33,7 +33,6 @@ dependencies {
 	mappings loom.officialMojangMappings()
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
 }
 
 processResources {
@@ -61,6 +60,7 @@ jar {
 	}
 }
 
+// configure the maven publication
 publishing {
 	publications {
 		create("mavenJava", MavenPublication) {

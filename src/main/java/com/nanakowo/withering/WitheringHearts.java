@@ -1,7 +1,7 @@
 package com.nanakowo.withering;
 
+import com.nanakowo.withering.core.registry.WitheringItems;
 import net.fabricmc.api.ModInitializer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +11,7 @@ public class WitheringHearts implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		WitheringItems.initialize();
 		LOGGER.info("WitheringHearts Initialized.");
 	}
 }
